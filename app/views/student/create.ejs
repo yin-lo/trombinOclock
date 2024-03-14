@@ -1,11 +1,11 @@
 <%- include('./../partials/header.ejs') %>
 
-<h1>Ajouter un étudiant</h1>
+<h1>Ajouter un.e étudiant.e</h1>
 
 <form method="POST">
 	<p>
 		<label for="promo">Promo</label>
-		<select name="promo" id="promo">
+		<select name="promo_id" id="promo">
 			<% promos.forEach(promo => { %>
 				<option value="<%= promo.id %>"><%= promo.name %></option>
 			<% }) %>
@@ -24,7 +24,7 @@
 		<input type="text" name="github_username" value="PrenomNom" />
 	</p>
 	<p>
-		<button>Valider</button>
+		<button type="submit">Valider</button>
 	</p>
 </form>
 
