@@ -1,0 +1,16 @@
+<%- include('./../partials/header.ejs') %>
+
+<h1>Liste des promos</h1>
+<ul class="cards">
+  <!-- Astuce si je veux voir mes données directement sur la page -->
+  <!-- <%= JSON.stringify(promos, null, 2) %> -->
+  <% promos.forEach(promo => { %>
+    <li class="card card--label">
+      <a href="/promos/<%= promo.id %>">
+        <%= promo.name %>
+      </a>
+    </li>
+  <% }) %>
+</ul>
+
+<%- include('./../partials/footer.ejs') %>

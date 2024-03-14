@@ -1,0 +1,13 @@
+<%- include('./../partials/header.ejs') %>
+
+<h1>Promo : <%= promoFound.name %></h1>
+
+<p>Github : <a href="<%= promoFound.github_organization %>"><%= promoFound.github_organization %></a></p>
+<nav>
+    <ul>
+        <li><a href="/promos/<%= promoFound.id %>/students">Liste des étudiants</a></li>
+        <li><a href="promo_edit.html">Modifier la promo</a></li>
+    </ul>
+</nav>
+
+<%- include('./../partials/footer.ejs') %>
