@@ -3,5 +3,10 @@
     "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#053525",
+    "titleBar.activeBackground": "#084A34",
+    "titleBar.activeForeground": "#EFFEF9"
   }
 }

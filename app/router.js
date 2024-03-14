@@ -6,12 +6,16 @@ const {
   createPromo,
 } = require('./controllers/promoController');
 
+const { showCreateStudentForm, createStudent } = require('./controllers/studentController');
+
 const router = Router();
 
 router.get('/', home);
 router.get('/promos', listPromo);
 router.get('/promos/create', showCreatePromoForm);
 router.post('/promos/create', createPromo);
+router.get('/students/create', showCreateStudentForm);
+router.post('/students/create', createStudent);
 router.get('/promos/:id', detailPromo);
 router.get('/promos/:id/students', listStudentsFromPromo);
 
