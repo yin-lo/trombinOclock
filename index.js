@@ -2,6 +2,7 @@
 // définies dans le fichier .env
 require('dotenv/config');
 const express = require('express');
+const session = require('express-session');
 const router = require('./app/router');
 
 const app = express();
@@ -15,6 +16,20 @@ app.use(express.static('public'));
 // Si express recoit des données sous cette forme, il sera capable de les
 // Ajouter dans le `req.body`
 app.use(express.urlencoded({ extended: true }));
+
+// J'initialise le middleware express-session
+// Il s'occupera de gérer les cookies de session
+// De générer un identifiant de session unique pour chaque utilisateur
+app.use(session({
+  secret: process.env.SESSION_SECRET || 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
+  cookie: {},
+}));
+
+app.use((req, res, next) => {
+  next();
+});
 
 app.use(router);
 

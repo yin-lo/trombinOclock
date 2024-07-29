@@ -13,7 +13,7 @@ module.exports = {
   rules: {
     'no-console': 'off',
     // Si on souhaite indenter avec des tabulations
-    indent: [4, 'tab'],
-    'no-tabs': 0,
+    // indent: ['error', 'tab'],
+    // 'no-tabs': 'off',
   },
 };

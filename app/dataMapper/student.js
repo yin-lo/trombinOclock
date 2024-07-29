@@ -9,12 +9,19 @@ const studentDataMapper = {
   },
 
   async createStudent(studentData) {
-    await client.query('INSERT INTO student (first_name, last_name, github_username, promo_id) VALUES ($1, $2, $3, $4)', [
-      studentData.first_name,
-      studentData.last_name,
-      studentData.github_username,
-      studentData.promo_id,
-    ]);
+    await client.query(
+      'INSERT INTO student (first_name, last_name, github_username, promo_id) VALUES ($1, $2, $3, $4);',
+      [
+        // $1
+        studentData.first_name,
+        // $2
+        studentData.last_name,
+        // $3
+        studentData.github_username,
+        // $4
+        studentData.promo_id,
+      ],
+    );
   },
 };
 

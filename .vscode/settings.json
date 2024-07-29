@@ -5,8 +5,8 @@
     "source.organizeImports": "never"
   },
   "workbench.colorCustomizations": {
-    "activityBar.background": "#053525",
-    "titleBar.activeBackground": "#084A34",
-    "titleBar.activeForeground": "#EFFEF9"
+    "activityBar.background": "#41280F",
+    "titleBar.activeBackground": "#5C3815",
+    "titleBar.activeForeground": "#FDFAF6"
   }
 }

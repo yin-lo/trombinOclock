@@ -1,6 +1,9 @@
 const mainController = {
   home(req, res) {
-    res.render('index');
+    // Je vais pouvoir afficher les données liées à la session de l'utilisateur
+    res.render('index', {
+      username: req.session.username,
+    });
   },
 };
 

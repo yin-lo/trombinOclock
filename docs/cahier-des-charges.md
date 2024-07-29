@@ -23,7 +23,6 @@ Le but est d'extraire les fonctionnalités demandées par le client en respectan
 |1|visiteur|voir la liste des jeux|choisir un jeu à jouer|
 |2|visiteur|voir les détails d'un jeu|pouvoir jouer au jeu|
 
-
 ### Pour notre projet
 
 |#|En tant que|Je veux|Afin de (dans le but de)|
